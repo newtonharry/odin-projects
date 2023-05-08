@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Roboto+Mono:ital@1&family=Roboto:wght@500&display=swap');
+
+:root{
+    --side-display-width: 33%;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url("./fonts/Norse-Bold.otf") 
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* SIDE DISPLAY SECTION */
+.signup-side-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url("./images/signup-image.jpg");
+    background-size: cover;
+}
+
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    background-color: black;
+    opacity: 0.4;
+    width: 100%;
+}
+
+.banner-image{
+    height: 100%;
+}
+
+.banner-text{
+    color: white;
+    font-family: Norse;
+    font-size: 4rem;
+}
+/* SIDE DISPLAY SECTION */
+
+
+/* SIGNUP SECTION */
+.signup-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.signup-description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    max-width: 60rem;
+    width: 100%
+}
+
+.signup-input{
+   display: flex; 
+   flex-wrap: wrap;
+   max-width: 40rem;
+   gap: 3.5rem;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+legend{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+label{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+}
+
+input{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+}
+
+.create-account{
+    width: 16rem;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: white;
+    border-radius: 100rem solid;
+    background-color: #596d48;
+}
+
+.log-in{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+}
+
+/* SIGNUP SECTION */
+
+
+/* MEDIA QUERIES */
+@media (max-width: 300rem) {
+    body{
+       display: flex; 
+    }
+    
+    .signup-side-display{
+       width: var(--side-display-width);
+    }
+    
+}
+
+@media (max-width: 45rem) {
+    body{
+       display: flex; 
+       flex-direction: column;
+    }
+
+    .signup-side-display{
+       width: 100%;
+    }
+
+}

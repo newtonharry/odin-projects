@@ -1,0 +1,22 @@
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: 500px;
+}
+
+.menu-item > img {
+  width: 250px;
+  height: 250px;
+}

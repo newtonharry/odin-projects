@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Press+Start+2P&display=swap");
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #e5989b;
+}
+
+.link {
+  text-decoration: none;
+  color: #6d6875;
+}
+
+.body {
+  flex: 1 1 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffb4a2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 800px;
+  border: 3px solid black;
+  border-radius: 24px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #b5838d;
+}
+
+.content > h1 {
+  font-family: "Press Start 2P", cursive;
+}
+
+.content > h2,
+p {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+}
+
+img {
+  border-radius: 8px;
+}

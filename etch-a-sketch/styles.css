@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu+Mono:wght@700&display=swap");
+
+/* Utility classes */
+
+/* Document */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: #92cea8;
+}
+
+input,
+button {
+  -webkit-appearance: none; /* Override default CSS styles */
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+input:hover,
+button:hover {
+  opacity: 1;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  border: 0;
+  border-radius: 12px;
+  padding: 6px;
+}
+
+/* Left Side */
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.clear-button {
+  background-color: #fea3bf;
+}
+
+.color-choice-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.rainbow-choice {
+  background-color: #00c2f9;
+}
+
+.normal-choice {
+  background-color: #d9ccb2;
+}
+
+/* Right Side */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 1rem; /* Set a specific slider handle width */
+  height: 1rem; /* Slider handle height */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 12px;
+}
+
+.slider::-moz-range-progress {
+  background-color: #fcee9e;
+}
+
+.slider-container > p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.sketch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+#grid-container {
+  display: grid;
+  border: 2px solid black;
+}
+
+.clear-button:hover {
+  opacity: 1;
+}
+
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  background-color: #f6c6c7;
+  border-radius: 8px;
+  width: 15rem;
+  padding: 4px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.highlight {
+  background-color: black;
+}
+
+.cell {
+  background-color: white;
+  width: auto; /* Make sure each grid item only takes up a maximum width to avoid disproportionate item sizes */
+  height: auto; /* Make sure each grid item only takes up a maximum height to avoid disproportionate item sizes */
+}
+
+/* Media Sizing */
+@media (max-width: 150rem) {
+  #grid-container {
+    width: 30rem; /* Forces the grid to make the grid items smaller width wise */
+    height: 30rem; /* Forces the grid to make the grid items smaller height wise */
+  }
+}
+
+@media (max-width: 100rem) {
+  #grid-container {
+    width: 20rem; /* Forces the grid to make the grid items smaller width wise */
+    height: 20rem; /* Forces the grid to make the grid items smaller height wise */
+  }
+}
+
+@media (max-width: 50rem) {
+  #grid-container {
+    width: 10rem; /* Forces the grid to make the grid items smaller width wise */
+    height: 10rem; /* Forces the grid to make the grid items smaller height wise */
+  }
+}

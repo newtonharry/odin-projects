@@ -1,0 +1,16 @@
+---
+import Search from "../components/Search";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Weather App">
+  <div class="h-full container mx-auto flex flex-col items-center p-2">
+    <h1 class="font-mono font-bold text-3xl text-emerald-200 mt-4">
+      Weather App
+    </h1>
+    <h3 class="text-sm text-white italic">
+      The sexiest weather app you'll ever use!
+    </h3>
+    <Search client:load />
+  </div>
+</Layout>

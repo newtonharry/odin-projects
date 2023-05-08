@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 25rem;
+  height: auto;
+  background-color: #575757;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: auto;
+  height: 7rem;
+  margin: 1.5rem;
+  padding: 1rem;
+  background-color: #bbd0bf;
+  font-family: "Orbitron", sans-serif;
+}
+
+.output-preview {
+  flex: 1 1 25%;
+  min-height: 1rem;
+}
+.output-result {
+  flex: 1 1 75%;
+  min-height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.input {
+  display: grid;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.clear {
+  grid-column: span 2;
+}
+
+.clear,
+.number,
+.operand {
+  background-color: #ebebeb;
+}
+
+.equal {
+  background-color: #f3a34b;
+}
+
+/* Make the zero span two columns */
+#zero {
+  grid-column: span 2;
+}
+
+button {
+  font-size: 2em;
+  border: 2px solid black;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 1;
+}
